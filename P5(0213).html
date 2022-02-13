@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrettyAnimatedLoginBox</title>
+    <link rel="stylesheet" href="/PALB.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <form action="P5(0213).html" method="get" class="Login-form">
+      <h1>Login</h1>
+
+      <div class="txtb">
+          <input type="text">
+          <span data-placeholder="Username"></span>
+      </div>
+
+       <div class="txtb">
+           <input type="password">
+           <span data-placeholder="Password"></span>
+       </div>
+
+       <input type="submit" class="loginbtn" value="Login">
+
+       <div>
+           계정 생성 <a href="#">Sign up</a>
+        </div>
+  </form>
+  <script type="text/javascript">
+    $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+   });
+   $(".txtb input").on("blur", function(){
+       if($(this).val() =="")
+       $(this).removeClass("focus");
+   })
+ </script>
+</body>
+</html>
