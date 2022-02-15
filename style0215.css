@@ -1,0 +1,45 @@
+.container1 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+}
+
+.animal {
+    width: 290px;
+    height: 300px;
+}
+
+.player1 {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.pla1 {
+    width: 290px;
+    height: 400px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.footer *{
+    font-size: 12px;
+    background-color: #3cb371;
+}
+
+a:link {
+    color: violet;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: rgb(43, 164, 180);
+}
+
+a {
+    text-decoration: none;
+}
