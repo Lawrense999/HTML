@@ -23,9 +23,14 @@
     flex-wrap: nowrap;
 }
 
+hr {
+    border-width: 3px;
+    border-color: skyblue;
+}
+
 .footer *{
     font-size: 12px;
-    background-color: #3cb371;
+    background-color: darkblue;
 }
 
 a:link {
@@ -41,5 +46,52 @@ a:hover {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
+.search {
+    text-align: center; 
+    margin-left: 35%;
+    width: 30%;
+    display: inline-block;
+    height: 25px;
+}
+
+.fst {
+    width: fit-content;
+    border-radius: 15px;
+    border-color: cornflowerblue;
+    border-width: 5px;
+}
+
+.fst1 {
+    width: 20%;
+    border-radius: 15px;
+    border-color: cornflowerblue;
+    border-width: 5px;
+    position: absolute;
+    left: 30%;
+    top: 37%;
+}
+
+.searchbox {
+    font-size: 25px;
+    border:none; border-right:0px; border-top:0px; border-left:0px; border-bottom:0px;
+}
+
+.loginbtn {
+    cursor: pointer;
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.user {
+    border-radius: 5px;
+}
+
+
+.video {
+    width: 390px; 
+    height: 450px;
+}
+
