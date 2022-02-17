@@ -1,0 +1,109 @@
+.container1 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+}
+
+.animal {
+    width: 290px;
+    height: 300px;
+}
+
+.player1 {
+    display: inline-block;
+    text-align: center;
+
+}
+
+.pla1 {
+    width: 290px;
+    height: 400px;
+    justify-content: center;
+    
+}
+
+hr {
+    border-width: 3px;
+    border-color: skyblue;
+}
+
+.footer *{
+    font-size: 12px;
+    background-color: darkturquoise;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(43, 164, 180);
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.navs {
+    border: 5px solid darkslateblue;
+    height: fit-content;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seri;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 80px;
+}
+
+.search {
+    text-align: center; 
+    margin-left: 35%;
+    width: 30%;
+    display: inline-block;
+    height: 25px;
+}
+
+.fst {
+    width: fit-content;
+    border-radius: 15px;
+    border-color: cornflowerblue;
+    border-width: 5px;
+}
+
+.fst1 {
+    width: 20%;
+    border-radius: 15px;
+    border-color: cornflowerblue;
+    border-width: 5px;
+    position: absolute;
+    left: 30%;
+    top: 37%;
+}
+
+.searchbox {
+    font-size: 25px;
+    border:none; border-right:0px; border-top:0px; border-left:0px; border-bottom:0px;
+}
+
+.loginbtn {
+    cursor: pointer;
+    background-color: darkblue;
+    border-radius: 5px;
+    font-size: 4px;
+}
+
+.user {
+    border-radius: 5px;
+}
+
+.video {
+    width: 292px;
+    height: 200px;
+    border: 1px solid red;
+}
