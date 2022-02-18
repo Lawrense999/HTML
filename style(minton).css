@@ -1,15 +1,3 @@
-.container1 {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    display: inline-block;
-    text-align: center;
-}
-
-.animal {
-    width: 290px;
-    height: 300px;
-}
-
 .player1 {
     display: inline-block;
     text-align: center;
@@ -23,20 +11,10 @@
 }
 
 .pla1 {
-    width: 299px;
+    border: 1px solid black;
+    width: 295px;
     height: 400px;
-    justify-content: center;
-    
-}
-
-hr {
-    border-width: 3px;
-    border-color: skyblue;
-}
-
-.footer *{
-    font-size: 12px;
-    background-color: darkturquoise;
+ 
 }
 
 a:link {
@@ -75,43 +53,47 @@ a {
     height: 25px;
 }
 
-.fst {
-    width: fit-content;
+.loginform {
+    width: 55vh;
+    height: 280px;
     border-radius: 15px;
-    border-color: cornflowerblue;
-    border-width: 5px;
-}
-
-.fst1 {
-    width: 20%;
-    border-radius: 15px;
-    border-color: cornflowerblue;
-    border-width: 5px;
-    position: absolute;
-    left: 30%;
-    top: 37%;
+    border: 2px solid black;
+    background-color: rgba(93, 113, 206, 0.555);
+    text-align: center;
 }
 
 .searchbox {
-    font-size: 25px;
-    border:none; border-right:0px; border-top:0px; border-left:0px; border-bottom:0px;
+    position: relative;
+    width: 100vh;
+    height: 5vw;
+    font-size: 28px;
+    /* border:none; border-right:0px; border-top:0px; border-left:0px; border-bottom:0px;  width: 20%; */
+    border-radius: 15px;
+    border: 3px solid gold;
+    left: 30%;
+    text-align: center; 
 }
 
 .loginbtn {
+    width: 40vh;
+    height: 3vw;
     cursor: pointer;
-    background-color: darkblue;
+    background-color: gold;
     border-radius: 5px;
-    font-size: 4px;
+    font-size: 20px; 
 }
 
 .user {
     border-radius: 5px;
     text-align: center;
+    width: 250px;
+    height: 5vh;
+    text-transform: uppercase;
 }
 
 .video {
     width: 292px;
     height: 200px;
-    border: 1px solid red;
+    border: 1px solid yellowgreen;
 }
 
