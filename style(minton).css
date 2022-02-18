@@ -13,11 +13,17 @@
 .player1 {
     display: inline-block;
     text-align: center;
-
+    border: 2px solid darkblue;
+    width: fit-content;
+    justify-content: center;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 5px;
 }
 
 .pla1 {
-    width: 290px;
+    width: 299px;
     height: 400px;
     justify-content: center;
     
@@ -58,7 +64,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-    word-spacing: 80px;
+    word-spacing: 30vh;
 }
 
 .search {
@@ -100,6 +106,7 @@ a {
 
 .user {
     border-radius: 5px;
+    text-align: center;
 }
 
 .video {
@@ -107,3 +114,4 @@ a {
     height: 200px;
     border: 1px solid red;
 }
+
