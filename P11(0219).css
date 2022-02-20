@@ -1,0 +1,11 @@
+.centeringContainer {
+    text-align: center;
+}
+    
+.centered {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
