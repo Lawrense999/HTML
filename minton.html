@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BadmintonWorld</title>
     <link rel="stylesheet" type='text/css' href="style(minton).css">    
+     <style>
+         #animation1 {
+             animation: searchbar 5s infinite;
+         }
+
+        @keyframes searchbar {
+            0% {
+                background-color: royalblue;
+            }      
+            50% {
+                background-color: slateblue;
+            }      
+            100% {
+                background-color: purple;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header><span style="color:darkblue">M</span><span style="color:darkblue">I</span><span style="color:darkblue">N</span><span style="color:gold;">T</span><span style="color:gold;">O</span><span style="color:gold;">N</span><span>🏸</span></header>
+   
+   
 
 <div class="loginform">
             <form action="#" method="get">
@@ -27,10 +46,10 @@
                 </label>
             </form>
 </div>
-      
-        <form action="https://www.google.com" method="get" target="_blank">
-            <input type="search" class="searchbox" name="q" placeholder="검색어를 입력해주세요🔍">
-
+      <form action="https://www.google.com" method="get" target="_blank">
+        
+              <input type="search" class="searchbox" id="animation1" name="q" placeholder="검색어를 입력해주세요🔍">
+       
         <br><br><br>
 
 <div>
