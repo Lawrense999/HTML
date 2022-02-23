@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: whitesmoke;
 }
 
@@ -28,11 +29,11 @@ header {
 }
 
 a:link {
-    color: blue;
+    color: pink;
 }
 
 a:visited {
-    color: gold;
+    color: lightblue;
 }
 
 a:hover {

@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BadmintonWorld</title>
-    <link rel="stylesheet" type='text/css' href="style(minton).css">    
-     <style>
-         #animation1 {
-             animation: searchbar 5s infinite;
-         }
+    <link rel="stylesheet" type='text/css' href="style(minton).css">
+    <style>
+        #searchb:hover {
+            animation: searchbar 0.88s;
+        }
+
+        .headtitle1 {
+            animation: headtitle 8.8s infinite;
+        
+        }
 
         @keyframes searchbar {
             0% {
-                background-color: royalblue;
-            }      
-            50% {
-                background-color: slateblue;
-            }      
+                background-color: whitesmoke;
+            }
+
             100% {
-                background-color: purple;
+                background-color: lightgoldenrodyellow;
+            }
+        }
+
+        @keyframes headtitle {
+            0% {
+                background-color: lightseagreen;
+            }
+    
+            100% {
+                background-color: darkslateblue;
             }
         }
     </style>
 </head>
 
 <body>
-    <header><span style="color:darkblue">M</span><span style="color:darkblue">I</span><span style="color:darkblue">N</span><span style="color:gold;">T</span><span style="color:gold;">O</span><span style="color:gold;">N</span><span>🏸</span></header>
-   
-   
+    <header class="headtitle1"><span style="color:darkblue">M</span><span style="color:darkblue">I</span><span
+            style="color:darkblue">N</span><span style="color:gold;">T</span><span style="color:gold;">O</span><span
+            style="color:gold;">N</span><span>🏸</span></header>
 
-<div class="loginform">
-            <form action="#" method="get">
-                <h1>LOGIN</h1>
-                <input type="text" class="user" placeholder="Username">
-                <br>
-                <input type="password" class="user" placeholder="Password">
-                <br><br>
-                <input type="submit" class="loginbtn" value="로그인">
-                <br><br>
-                <span>계정이 없으신가요?</span>
-                <br>
-                <a href="#makeaccount">계정 생성하기</a>
-                <!-- 왜 폰트사이즈를 안줬는데 정확히 맞춰진건지 -->
-                </label>
-            </form>
-</div>
+
+
+    <div class="loginform">
+        <form action="#" method="post">
+            <h1>LOGIN</h1>
+            <input type="text" class="user" placeholder="Username">
+            <br>
+            <input type="password" class="user" placeholder="Password">
+            <br><br>
+            <input type="submit" class="loginbtn" value="로그인">
+            <br><br>
+            <span>계정이 없으신가요?</span>
+            <br>
+            <a href="#makeaccount">계정 생성하기</a>
+            <!-- 왜 폰트사이즈를 안줬는데 정확히 맞춰진건지 -->
+            </label>
+        </form>
+    </div>
+    
       <form action="https://www.google.com" method="get" target="_blank">
         
-              <input type="search" class="searchbox" id="animation1" name="q" placeholder="검색어를 입력해주세요🔍">
+              <input type="search" class="searchbox" id="searchb" name="q" placeholder="검색어를 입력해주세요🔍">
        
         <br><br><br>
 
