@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favoirte</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- include libraries(jQuery, bootstrap) -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<style>
+.carousel-inner > .item > img {
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 150px;
+    }
+</style>
+</head>
+
+<body style="background-color: sienna;">
+    <header><h1>My favoirte </h1></header>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                BRAND NEW
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MENU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Brand</a>
+          <a class="nav-link" href="#">Price</a>
+          <a class="nav-link disabled">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-4">
+            <a href="https://www.samsung.com/sec/" target="_blank">
+            <img src="https://www.samsung.com/sec/static/samsung_logo.png" class="rounded mx-auto d-block" alt="SAMSUNG" style="width: 300px;"></a> 
+          </div>
+          <div class="col-sm-4">
+            <a href=" https://www.google.co.kr/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" class="rounded mx-auto d-block" alt="GOOGLE" style="width: 200px;"></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="https://www.bmw.co.kr/ko/index.html" target="_blank"> 
+            <img src="https://ww.namu.la/s/c6fca9cc97355083274caf2defd47e237877840922af78e1b8facea2adbecdb33bc0c07e2480290a9f01465fdbe3ab6bd812fe7773a7d82b606b792694d08feb95cb0be1cf3f34e0985b7a0ae48d976dc0ad99d33076ea1c9593a69dfa859613" class="rounded mx-auto d-block" alt="BMW" style="width: 140px;"></a>
+          </div>
+        </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-sm-4">
+            <a href="https://bwfbadminton.com/" target="_blank"> 
+           <img src="data:image/png;base64,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" alt="bwf" width="300px;" height=" 100px;"></a>
+          </div>
+          <div class="col-md-4">
+         
+          </div>
+          <div class="col-md-4">
+            One of three columns
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 offset-3">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.samsung.com/kdp/aboutsamsung/brand_identity/logo/360_197_1.png?$FB_TYPE_B_PNG$" class="d-block w-100" alt="..."  style= "height: auto;">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>1</h5>
+                      <p style="color:blue;">Representative Corporation of S.Korea</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" class="d-block w-100" alt="..." style= "height: auto;">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>2</h5>
+                      <p>Representative Corporation of USA</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./data/bmw.png" class="d-block w-100" alt="bmw" style= "height: auto;">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>3</h5>
+                      <p>Representative Corporation of Germany</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <br>
+      <hr>
+      <div id="summernote">Hello Summernote</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+      <script>
+        $(document).ready(function() {
+  $('#summernote').summernote();
+});
+    </script>
+
+</body>
+
+</html>
