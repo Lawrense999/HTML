@@ -9,12 +9,12 @@
     <link rel="stylesheet" type='text/css' href="style(minton).css">
     <style>
         #searchb:hover {
-            animation: searchbar 0.88s;
+            animation: searchbar 0.2s;
         }
 
         .headtitle1 {
             animation: headtitle 8.8s infinite;
-        
+
         }
 
         @keyframes searchbar {
@@ -29,120 +29,146 @@
 
         @keyframes headtitle {
             0% {
-                background-color: lightseagreen;
+                background-color: lightcoral;
             }
-    
+
             100% {
-                background-color: darkslateblue;
+                background-color: lightgreen;
             }
         }
     </style>
 </head>
 
 <body>
-    <header class="headtitle1"><span style="color:darkblue">M</span><span style="color:darkblue">I</span><span
+
+    <header class="headtitle1"><span>🏸</span><span style="color:darkblue">M</span><span style="color:darkblue">I</span><span
             style="color:darkblue">N</span><span style="color:gold;">T</span><span style="color:gold;">O</span><span
             style="color:gold;">N</span><span>🏸</span></header>
 
 
 
-    <div class="loginform">
-        <form action="#" method="post">
-            <h1>LOGIN</h1>
-            <input type="text" class="user" placeholder="Username">
-            <br>
-            <input type="password" class="user" placeholder="Password">
-            <br><br>
-            <input type="submit" class="loginbtn" value="로그인">
-            <br><br>
-            <span>계정이 없으신가요?</span>
-            <br>
-            <a href="#makeaccount">계정 생성하기</a>
-            <!-- 왜 폰트사이즈를 안줬는데 정확히 맞춰진건지 -->
-            </label>
-        </form>
+    <br>
+    <div class="bg-image">
+        <div class="loginform">
+            <form action="#" method="post">
+                <h1>LOGIN</h1>
+                <input type="text" class="user inputs" placeholder="Username" required>
+                <br>
+                <input type="password" class="user inputs" placeholder="Password" required>
+                <br><br>
+                <input type="submit" class="loginbtn" value="로그인">
+                <br><br>
+                <span>계정이 없으신가요?</span>
+                <br>
+                <a href="#make_account" id="make_account">계정 생성하기</a>
+                <!-- 왜 폰트사이즈를 안줬는데 정확히 맞춰진건지 -->
+                </label>
+            </form>
+        </div>
+
+        <form action="https://www.google.com" method="get" target="_blank">
+            <div>
+                <input type="search" class="searchbox inputs" id="searchb" name="q" placeholder="검색어를 입력해주세요🔍">
+            </div>
     </div>
-    
-      <form action="https://www.google.com" method="get" target="_blank">
-        
-              <input type="search" class="searchbox" id="searchb" name="q" placeholder="검색어를 입력해주세요🔍">
-       
+
         <br><br><br>
 
-<div>
-    <div class="navs">
-        <a href="http://127.0.0.1:5500/minton.html">Home</a>
-        <a href="https://timesofindia.indiatimes.com/sports/badminton" target="_blank">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>   
-</div>
+        <form action="minton.html" method="get">
+            <div class="navs">
+                <a href="http://127.0.0.1:5500/minton.html">Home</a>
+                <a href="https://timesofindia.indiatimes.com/sports/badminton" target="_blank">News</a>
+                <a href="#">photo</a>
+                <a href="#about">video</a>
+            </div>
+        </form>
 
-    <br><br><br>
+        <br><br><br>
 
-    <p style="font-size: 50px; text-align: center; text-transform: uppercase;">Player's Photo</p>
+        <p style="font-size: 50px; text-align: center; text-transform: uppercase;">Player's Photo</p>
 
-    <div class="player1">
-        
-        <div>
-            <img class="pla1" src="https://i.pinimg.com/736x/25/c3/24/25c324b6197354ee9cba0b5709a5c502.jpg" alt="LYD">
-            <br>
-            <a href="https://www.google.com/search?q=lee+yong+dae&sxsrf=APq-WBuMfwXnkf0bHoK2owZa2C1LxeJNPA%3A1645451491405&source=hp&ei=45gTYuKzFpqsoASNu6LYCg&iflsig=AHkkrS4AAAAAYhOm85yfGiZiU0bXMYtoqMRwvcbHgyIX&ved=0ahUKEwiisY29-JD2AhUaFogKHY2dCKsQ4dUDCAk&uact=5&oq=lee+yong+dae&gs_lcp=Cgdnd3Mtd2l6EAMyBQguEIAEMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBOgQIIxAnOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6DQguEIAEEMcBENEDEAo6BQgAEIAEOhEILhCABBCxAxCDARDHARCjAjoHCCMQ6gIQJzoHCC4Q6gIQJzoICC4QgAQQsQM6BAguEAM6CwguEIAEELEDEIMBOhEILhCABBCxAxCDARDHARCvAToECAAQAzoICC4QgAQQ1AI6CwguEIAEELEDENQCOg4ILhCABBCxAxDHARCjAjoICAAQgAQQsQM6BAguECc6DgguEIAEELEDEMcBENEDOg4ILhCABBCxAxCDARDUAjoECC4QCjoFCC4QywE6BAgAEAo6BwguENQCEAo6CgguENQCEAoQywE6CAguENQCEMsBOgcILhAKEMsBUABYpCBgtCFoB3AAeAGAAYcBiAGLFJIBBDEuMjKYAQCgAQGwAQo&sclient=gws-wiz" target="_blank">LEE YONG DAE</a>
+        <div class="player1">
+
+            <div>
+                <img class="pla1" src="https://i.pinimg.com/736x/25/c3/24/25c324b6197354ee9cba0b5709a5c502.jpg"
+                    alt="LYD">
+                <br>
+                <a href="https://www.google.com/search?q=lee+yong+dae&sxsrf=APq-WBuMfwXnkf0bHoK2owZa2C1LxeJNPA%3A1645451491405&source=hp&ei=45gTYuKzFpqsoASNu6LYCg&iflsig=AHkkrS4AAAAAYhOm85yfGiZiU0bXMYtoqMRwvcbHgyIX&ved=0ahUKEwiisY29-JD2AhUaFogKHY2dCKsQ4dUDCAk&uact=5&oq=lee+yong+dae&gs_lcp=Cgdnd3Mtd2l6EAMyBQguEIAEMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBOgQIIxAnOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6DQguEIAEEMcBENEDEAo6BQgAEIAEOhEILhCABBCxAxCDARDHARCjAjoHCCMQ6gIQJzoHCC4Q6gIQJzoICC4QgAQQsQM6BAguEAM6CwguEIAEELEDEIMBOhEILhCABBCxAxCDARDHARCvAToECAAQAzoICC4QgAQQ1AI6CwguEIAEELEDENQCOg4ILhCABBCxAxDHARCjAjoICAAQgAQQsQM6BAguECc6DgguEIAEELEDEMcBENEDOg4ILhCABBCxAxCDARDUAjoECC4QCjoFCC4QywE6BAgAEAo6BwguENQCEAo6CgguENQCEAoQywE6CAguENQCEMsBOgcILhAKEMsBUABYpCBgtCFoB3AAeAGAAYcBiAGLFJIBBDEuMjKYAQCgAQGwAQo&sclient=gws-wiz"
+                    target="_blank">LEE YONG DAE</a>
+            </div>
+
+            <div>
+                <img class="pla1" src="https://i.pinimg.com/originals/31/75/d7/3175d7abab3f30c925e7544d02563e00.png"
+                    alt="WatanabeYuta">
+                <br>
+                <a href="https://www.google.com/search?q=yuta+watanabe&sxsrf=APq-WBtVh1OclZxMzH_rr546aybLn5cUuQ%3A1645451496475&ei=6JgTYr28HNWH1e8Px6ud2A4&gs_ssp=eJzj4tVP1zc0TKoysIwvs7Q0YPTirSwtSVQoTyxJzEtMSgUAh7QJeQ&oq=YUta+watqanabe&gs_lcp=Cgdnd3Mtd2l6EAEYATIHCC4Q1AIQDTIHCC4Q1AIQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDToECCMQJzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgUIABCABDoFCC4QgAQ6DgguEIAEELEDEMcBENEDOggIABCABBCxAzoHCCMQ6gIQJzoHCC4Q6gIQJzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6EAguELEDEIMBEMcBENEDEAo6CAguEIAEENQCOgsILhCABBCxAxCDAToOCC4QgAQQsQMQgwEQ1AI6BwgjELECECc6BwgAEIAEEAo6EAguELEDEIMBEMcBENEDEEM6BAgAEAo6BwguENQCEEM6BQguEMsBOgUIABDLAToGCAAQChAeOgUIIRCgAUoECEEYAEoECEYYAFAAWK4UYJIeaAJwAXgAgAGVAYgB2A6SAQQwLjE2mAEAoAEBsAEKwAEB&sclient=gws-wiz"
+                    target="_blank">YUTA WATANABE</a>
+            </div>
+
+            <div>
+                <img class="pla1"
+                    src="https://editorial01.shutterstock.com/wm-preview-450/10583853br/9bbd9f4c/all-england-open-badminton-championships-birmingham-united-kingdom-shutterstock-editorial-10583853br.jpg"
+                    alt="EndoHiroyuki">
+                <br>
+                <a href="https://www.google.com/search?q=hiroyuki+endo&sxsrf=APq-WBuf6-1ykU8JcJGLYVls3HMFwx5L8A%3A1645451595613&ei=S5kTYvffJMmT-AbL14C4DQ&gs_ssp=eJzj4tLP1TfIM7E0LCsyYPTizcgsyq8szc5USM1LyQcAcNMIxg&oq=hiroyuki+endo&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywE6BAgjECc6CwgAEIAEELEDEIMBOg4ILhCABBCxAxDHARDRAzoICAAQgAQQsQM6DgguEIAEELEDEMcBEKMCOgsILhCABBDHARCvAToRCC4QgAQQsQMQgwEQxwEQowI6BQgAEIAEOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQ0QM6BwgAELEDEAo6BAgAEAo6CAguEIAEENQCOgUILhCABDoHCC4Q1AIQCjoECC4QCkoECEEYAEoECEYYAFAAWPsYYJMiaAVwAXgBgAGOAYgBiBGSAQQwLjE4mAEAoAEBwAEB&sclient=gws-wiz"
+                    target="_blank">HIROYUKI ENDO</a>
+            </div>
+
+            <div>
+                <img class="pla1" src="https://i.pinimg.com/originals/05/e7/39/05e7395d856d1187f93fd0ec0cdbf5d2.jpg"
+                    alt="Gideon">
+                <br>
+                <a href="https://www.google.com/search?q=marcus+gideon&sxsrf=APq-WBtgCI8J179-HsomvU8hQXFNAIOJpA%3A1645451664473&ei=kJkTYrGfHJKt-QaLop7YDw&gs_ssp=eJzj4tLP1TeoLMwyNc82YPTizU0sSi4tVkjPTEnNzwMAdLcI5A&oq=marcus+gideon&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywE6DgguEIAEELEDEMcBENEDOgsILhCABBDHARDRAzoLCAAQgAQQsQMQgwE6DgguEIAEELEDEMcBEKMCOhEILhCABBCxAxCDARDHARDRAzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6BwgjEOoCECc6BwguEOoCECc6BggjECcQEzoECCMQJzoICAAQgAQQsQM6CAguEIAEELEDOgsILhCABBDHARCjAjoICC4QgAQQ1AI6CwguEIAEELEDEIMBOgUILhCABDoFCAAQgAQ6BwguEIAEEAo6BAguEApKBAhBGABKBAhGGABQAFjjEmDOHGgBcAF4AIABlAGIAaINkgEEMC4xNJgBAKABAbABCsABAQ&sclient=gws-wiz"
+                    target="_blank">MARCUS GIDEON</a>
+            </div>
+
         </div>
+        <br>
 
-        <div>
-            <img class="pla1" src="https://i.pinimg.com/originals/31/75/d7/3175d7abab3f30c925e7544d02563e00.png" alt="WatanabeYuta">
-            <br>
-            <a href="https://www.google.com/search?q=yuta+watanabe&sxsrf=APq-WBtVh1OclZxMzH_rr546aybLn5cUuQ%3A1645451496475&ei=6JgTYr28HNWH1e8Px6ud2A4&gs_ssp=eJzj4tVP1zc0TKoysIwvs7Q0YPTirSwtSVQoTyxJzEtMSgUAh7QJeQ&oq=YUta+watqanabe&gs_lcp=Cgdnd3Mtd2l6EAEYATIHCC4Q1AIQDTIHCC4Q1AIQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDTIECAAQDToECCMQJzoRCC4QgAQQsQMQgwEQxwEQ0QM6CwgAEIAEELEDEIMBOgUIABCABDoFCC4QgAQ6DgguEIAEELEDEMcBENEDOggIABCABBCxAzoHCCMQ6gIQJzoHCC4Q6gIQJzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6EAguELEDEIMBEMcBENEDEAo6CAguEIAEENQCOgsILhCABBCxAxCDAToOCC4QgAQQsQMQgwEQ1AI6BwgjELECECc6BwgAEIAEEAo6EAguELEDEIMBEMcBENEDEEM6BAgAEAo6BwguENQCEEM6BQguEMsBOgUIABDLAToGCAAQChAeOgUIIRCgAUoECEEYAEoECEYYAFAAWK4UYJIeaAJwAXgAgAGVAYgB2A6SAQQwLjE2mAEAoAEBsAEKwAEB&sclient=gws-wiz" target="_blank">YUTA WATANABE</a>
-        </div>
 
-        <div>
-            <img class="pla1" src="https://editorial01.shutterstock.com/wm-preview-450/10583853br/9bbd9f4c/all-england-open-badminton-championships-birmingham-united-kingdom-shutterstock-editorial-10583853br.jpg" alt="EndoHiroyuki">
-            <br>
-            <a href="https://www.google.com/search?q=hiroyuki+endo&sxsrf=APq-WBuf6-1ykU8JcJGLYVls3HMFwx5L8A%3A1645451595613&ei=S5kTYvffJMmT-AbL14C4DQ&gs_ssp=eJzj4tLP1TfIM7E0LCsyYPTizcgsyq8szc5USM1LyQcAcNMIxg&oq=hiroyuki+endo&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywE6BAgjECc6CwgAEIAEELEDEIMBOg4ILhCABBCxAxDHARDRAzoICAAQgAQQsQM6DgguEIAEELEDEMcBEKMCOgsILhCABBDHARCvAToRCC4QgAQQsQMQgwEQxwEQowI6BQgAEIAEOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQ0QM6BwgAELEDEAo6BAgAEAo6CAguEIAEENQCOgUILhCABDoHCC4Q1AIQCjoECC4QCkoECEEYAEoECEYYAFAAWPsYYJMiaAVwAXgBgAGOAYgBiBGSAQQwLjE4mAEAoAEBwAEB&sclient=gws-wiz" target="_blank">HIROYUKI ENDO</a>
-        </div>
+        <p style="font-size: 50px; text-align: center; text-transform: uppercase;">Player's Video</p>
 
-        <div>
-            <img class="pla1" src="https://i.pinimg.com/originals/05/e7/39/05e7395d856d1187f93fd0ec0cdbf5d2.jpg" alt="Gideon">
-            <br>
-            <a href="https://www.google.com/search?q=marcus+gideon&sxsrf=APq-WBtgCI8J179-HsomvU8hQXFNAIOJpA%3A1645451664473&ei=kJkTYrGfHJKt-QaLop7YDw&gs_ssp=eJzj4tLP1TeoLMwyNc82YPTizU0sSi4tVkjPTEnNzwMAdLcI5A&oq=marcus+gideon&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywEyBQgAEMsBMgUIABDLATIFCAAQywE6DgguEIAEELEDEMcBENEDOgsILhCABBDHARDRAzoLCAAQgAQQsQMQgwE6DgguEIAEELEDEMcBEKMCOhEILhCABBCxAxCDARDHARDRAzoUCC4QgAQQsQMQgwEQxwEQ0QMQ1AI6BwgjEOoCECc6BwguEOoCECc6BggjECcQEzoECCMQJzoICAAQgAQQsQM6CAguEIAEELEDOgsILhCABBDHARCjAjoICC4QgAQQ1AI6CwguEIAEELEDEIMBOgUILhCABDoFCAAQgAQ6BwguEIAEEAo6BAguEApKBAhBGABKBAhGGABQAFjjEmDOHGgBcAF4AIABlAGIAaINkgEEMC4xNJgBAKABAbABCsABAQ&sclient=gws-wiz" target="_blank">MARCUS GIDEON</a>
-        </div>
-        
-    </div>
-    <br>
-  
 
-    <p style="font-size: 50px; text-align: center; text-transform: uppercase;">Player's Video</p>
+        <iframe class="video" src="https://www.youtube.com/embed/Ga6xS09vg1U" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/hm_fAMsTgNA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/arnWGCx0zAQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/8PjavRinoyk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <form action="#" method="get"></form>
+        <input type="button" value="🐬맨 위로" onclick="popmsg()" style="float: right;">
+    </form>
+    <script>
+        function popmsg() {
+            alert("맨 위로 가는 기능을 아직 안배웠는데요?");
+        }
+    </script>
 
     
-    <iframe class="video" src="https://www.youtube.com/embed/Ga6xS09vg1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="video" src="https://www.youtube.com/embed/hm_fAMsTgNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="video" src="https://www.youtube.com/embed/arnWGCx0zAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="video" src="https://www.youtube.com/embed/8PjavRinoyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
- 
-<br><br><br><br><br><br><br><br><br><br><br>
-<form action="#" method="get"></form>
-<input type="button" value="🐬맨 위로" onclick="popmsg()" style="float: right;">
-</form>
-<script>
-    function popmsg() {
-        alert("맨 위로 가는 기능을 아직 안배웠는데요?");
-    }
-</script>
+    <footer style="font-size: 12px; float: left; text-align: left;">
 
+        <p>Welcome to <strong>Junho's</strong> Badminton world</p>
+        <p>Copyrightⓒ2022 by OO. All pictures and videos cannot be copied without permission.</p>
+        <p>If you wanna contact with webmaster, plz contact <strong>010-1004-1004</strong></p>
 
-
-<footer style="font-size: 12px; float: left;">
-
-    <p>Welcome to <strong>Junho's</strong> Badminton world</p>
-    <p>Copyrightⓒ2022 by OO. All pictures and videos cannot be copied without permission.</p>
-    <p>If you wanna contact with webmaster, plz contact <strong>010-1004-1004</strong></p>
-
-</footer>
+    </footer>
 
 </body>
 
 </html>
-
