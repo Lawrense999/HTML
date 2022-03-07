@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (max-width: 760px) {
+            .putInfor {
+                /* display: inline; */
+                background-color: yellow;
+            }
+        }
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkgreen;
+            height: 100vh;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="putInfor">
+
+            <fieldset style="width: 770px;">
+                <legend>회원정보</legend>
+                아이디: <input type="text" name="id" id="id" placeholder="아이디를 입력해주십시오" required>
+                <br>
+                비밀번호: <input type="password" name="pw" id="pw" placeholder="8글자 이상 입력해주세요" required>
+                <br>
+                생년월일: <input type="date" name="date" id="date" required>
+                <br>
+                이메일: <input type="email" name="email" id=email placeholder="이메일을 기입해주세요" required>
+                <br>
+                전화번호: <input type="tel" name="tel" id="tel" placeholder="연락처를 기입해주세요" pattern=[0-9]{3}-[0-9]{4}-[0-9]{4} required>
+                <p>사이트를 알게된 경로:<br> <span style="font-size: 10px;">(다중선택 가능)</span></p>
+                <input type="checkbox" name="search" id="search"><label for="search">검색</label>
+                <input type="checkbox" name="friend" id="friend"><label for="friend">친구</label>
+                <input type="checkbox" name="recommendation" id="recommendation"><label for="recommendation">추천</label>
+            </fieldset>
+        </div>
+        <br>
+        <button type="submit" onclick="Hello()">완료</button> 
+        <button type="reset" onclick="Reset()">초기화</button>
+    </form>
+    <script>
+        function Hello() {
+                alert('회원정보가 입력되었습니다. 감사합니다');
+            };
+            // else를 넣어서 입력사항에서 하나라도 덜입력되면 '필수사항을 기재해주세요' 라고 하게 하고싶은데 모르겠어요ㅠㅠ
+        function Reset() {
+            confirm('정말 초기화를 하시겠습니까?')
+        }
+            
+    </script>
+</body>
+</html>
