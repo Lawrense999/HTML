@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class P98 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner (System.in);
+		char grade;
+		
+		System.out.print("시험 점수를 입력하세요: ");
+		int score = scanner.nextInt();
+		if (score >= 90) 
+			grade = 'A';
+		
+		else if (score >= 70) 
+			grade = 'B';
+		
+		else if (score >= 50) 
+			grade = 'C';
+		
+		else 
+			grade = 'D';
+			System.out.println("당신의 점수는 " +score+ "점이기 때문에 학점은 " +grade+ "입니다");
+		
+			scanner.close();
+		}
+		
+		}
+	
+
+
