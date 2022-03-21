@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class P106 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		String a = "철수";
+		String b = "영희";
+		System.out.println("가위, 바위, 보 중 하나를 입력하세요");
+		System.out.print(a + ">> ");
+		String rsp1 = scanner.next();
+		System.out.println(a + "는 " + rsp1 + "를 냈습니다");
+		System.out.print(b + ">> ");
+		String rsp2 = scanner.next();
+		System.out.println(b + "는 " + rsp2 + "를 냈습니다");
+		// 누가 이겼는지 출력 
+		if (rsp1.equals("가위")) {
+			if (rsp2.equals("바위"))
+				System.out.println(a + "가 졌습니다");
+			else if (rsp2.equals("보"))
+				System.out.println(a + "가 이겼습니다");
+			else if (rsp2.equals("가위"))
+				System.out.println("비겼습니다");
+		}
+		if (rsp1.equals("바위")) {
+			if (rsp2.equals("가위"))
+				System.out.println(a + "가 이겼습니다");
+			else if (rsp2.equals("보"))
+				System.out.println(a + "가 졌습니다");
+			else if (rsp2.equals("바위"))
+				System.out.println("비겼습니다");
+		}
+		if (rsp1.equals("보")) {
+			if (rsp2.equals("가위"))
+				System.out.println(a + "가 졌습니다");
+			else if (rsp2.equals("보"))
+				System.out.println("비겼습니다");
+			else if (rsp2.equals("바위"))
+				System.out.println(a + "가 이겼습니다");
+			//==은 숫자만 가능 
+			//문자랑 일치시키려면 .equals()
+		}	
+	}
+}
+
