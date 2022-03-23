@@ -1,0 +1,39 @@
+package org.comstudy21.day10;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class Day10Ex06Lotto {
+
+	public static final int MAX = 45;
+	public static final int SIZE = 6;
+
+	public static void main(String[] args) {
+		System.out.println("6개의 로또 숫자가 랜덤으로 뽑힙니다. \"두근두근두근\"");
+		Random random = new Random(); // 난수 발생기
+
+		int n = 0;
+		int[] lotto = new int[SIZE]; //방이 6개라서 int[]lotto에 6개만 넣을수있다 // 배열을 SIZE만큼 생성하고 요소를 넣음 (이건 전부 0으로 초기화됨)
+//		System.out.println(n);
+		// int n을 6개 생성하고 [] lotto 안에 넣어야함.
+		for (int i = 0; i < SIZE; i++) {
+			n = random.nextInt(MAX) + 1; // 0~44 +1 1~45// 1~45까지의 숫자를 랜덤함수를 통해 랜덤하게 저장.
+			lotto[i] = n; // 6개의 방에 전부다 숫자가 저장돼있음.
+		}
+	
+		
+		// n을 새롭게 만들때마다 배열에 한개씩 집어넣어야 함.
+//		System.out.println(Arrays.toString(lotto)); //배열을 String(줄)형식으로 만들겠다!
+		//★배열을 출력하는것도 for문으로 해보자!★
+		for (int j = 0; j < SIZE; j++) { // 0,1,2,3,4,5
+			System.out.println(lotto[j]); //0~5번방까지 보여줘야함
+		}
+		//숫자가 중복이면 문제가 되니까, 중복을 피하게 하라. (과제)
+//		}
+
+		// 위 문장의 45까지의 숫자중에 6개를 추출.
+		// 출력
+
+	}
+
+}
