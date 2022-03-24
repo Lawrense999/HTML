@@ -1,0 +1,22 @@
+package java_day11;
+
+public class Day11Ex03Array2 {
+int [][] arr = new int [5][5];
+public Day11Ex03Array2() {
+//	Ex03Test01();// TODO Auto-generated constructor stub
+//	Ex03Test02();
+//	Ex03Test03();
+	Ex03Test04();
+}
+public void Ex03Test04() {
+	int number = 1;
+	for (int i=0; i<arr.length; i++) { //i는 0초기화; i가 arr배열의 길이보다 작을 때까지 i를 증가 
+			for (int j=0; j<arr[i].length; j++) { //j는 0 초기화; j가 arr배열의 길이보다 작을때까지 j를 증가
+					
+				arr[i][j] = number++; //배열에 있는 i와 j의 값을 1씩 증가시킴
+				System.out.print(arr[i][j] + "\t"); //arr배열에 들어간 i값과 j값을 출력 + "\t"
+				 
+			}
+			System.out.println();
+	}
+}
