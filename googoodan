@@ -1,0 +1,62 @@
+
+public class googoodan {
+
+	public googoodan() {
+		googoo();
+	}
+
+	public void googoo() {
+		int i = 0;
+		int j = 0;
+		int a = 0;
+
+		// a== 0일떈 2,3,4(단)가 나와야하고 a==1일땐 5,6,7 a==2일땐 8,9
+		for (i = 1; i < 10; i++) { // j가의 4의 배수일때 \n을 써서 다음줄로 넘겨라
+			for (j = 2; j < 11; j++) {
+				if (j == 10)
+					break;
+				for (a = 0; a < 3; a++) {
+					System.out.print(j + " X " + i + " = " + (i * j)); // 10
+					System.out.print("\t");
+				}
+
+				System.out.println();
+			}
+		}
+	}
+
+//	}
+	public void googoo1() {
+		System.out.println("안녕하세요");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new googoodan();
+	}
+}
+//}
+//}
+//}
+
+//		for (i = 1; i < 10; i++) {
+//			for (j = 5; j < 8; j++) {
+//				System.out.print(j + " X " + i + " = " + j * i);
+//				System.out.print("\t");
+//
+//			}
+//			System.out.println();
+//		}
+//		System.out.println();
+//
+//		for (i = 1; i < 10; i++) {
+//			for (j = 8; j < 10; j++) {
+//				System.out.print(j + " X " + i + " = " + j * i);
+//				System.out.print("\t");
+//
+//			}
+//			System.out.println();
+//		}
+//	}
+//
+//}
