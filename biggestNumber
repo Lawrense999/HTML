@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class P133 {
+//	static Scanner scanner = new Scanner(System.in);	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		// TODO Auto-generated method stub
+		// 양수 5개를 입력받아 배열에 저장하고, 제일 큰 수를 출력하는 프로그램을 작성하라
+		
+		int intArray [] = new int[5];
+		int max = 0;
+		System.out.println("아무 숫자를 5개 입력하십시오 (입력하신 숫자 중에서 가장 큰 수를 보여드립니다");
+			for (int i=0; i<intArray.length; i++) {
+				intArray[i] = scanner.nextInt();
+				if (intArray[i] > max)
+					max = intArray[i];
+				
+			}
+			System.out.print("가장 큰 수는" + max + "입니다");
+			scanner.close();
+		}
+	
+		
+	}
+
