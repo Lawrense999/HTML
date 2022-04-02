@@ -1,0 +1,41 @@
+
+public class anyAny
+{
+	int radius;
+
+	public anyAny(int radius)
+	{
+		this.radius = radius;
+	}
+
+	public void anyOne(int radius)
+	{
+		this.radius = radius;
+	}
+
+	double getRad()
+	{
+		return 3.14 * radius * radius;
+	}
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		anyAny abc = new anyAny(1);
+		anyAny abc1 = new anyAny(2);
+		anyAny abc2 = new anyAny(3);
+
+		System.out.println(abc.getRad());
+		System.out.println(abc1.getRad());
+		System.out.println(abc2.getRad());
+
+		abc.anyOne(4);
+		abc1.anyOne(5);
+		abc2.anyOne(6);
+
+		System.out.println(abc.getRad());
+		System.out.println(abc1.getRad());
+		System.out.println(abc2.getRad());
+	}
+
+}
