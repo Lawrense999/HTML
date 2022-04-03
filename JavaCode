@@ -1,0 +1,42 @@
+class Human // P204 1번문제
+{ // 그니까 결론적으로 궁금한거는 다른 클래스에서 Human안의 static을 못받는건지.. main에서도 못받는거같은데 왜그런지를 모르겠어요
+	// 원래 이런건지
+	public String name; // String = 대문자 S임
+	public int age; // static과 public
+	public double height, weight;
+
+	// private는 다른 class에서는 상속받을 수없음.
+	public Human()
+	{
+		name = null; // 이건 방금 이해했꼬
+	}
+
+	public Human(String s)
+	{
+		name = s;
+	}
+} // P 204 1번문제!
+
+//이게 정답 코드다
+
+//﻿문제 1에 main() 메소드를 추가하여 레퍼런스 변수명을 aHuman으로 하고 Human 객체를 생성한 후 name 필드를 "홍길동"으로, 
+//age는 21, height는 180.5, wegiht는 73.2를 각각 대입해라
+public class aHuman
+{
+
+	public static void main(String[] args)
+	{
+		Human aHuman = new Human(); // 기본생성자
+		aHuman.name = "홍길동";
+		aHuman.age = 21;
+		aHuman.height = 180.5;
+		aHuman.weight = 73.2;
+		// TODO Auto-generated method stub
+		// ﻿3. 배열의 크기가 5인 Human 타입의 객체 배열을 생성하라
+		Human[] abc = new Human[5];
+		for (int i = 0; i < abc.length; i++)
+			abc[i] = new Human();
+
+		System.out.println("이름은 " + aHuman.name); // 정답코드에는 public으로 되ㅐ있는데 제가 static으로 바꿔봤거든요 그랬더니 null로 뜨더라고요
+	}
+}
