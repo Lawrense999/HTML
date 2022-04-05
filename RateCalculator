@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+// Q static 멤버를 이용하여 달러와 원화를 변환 해주는 환율 계산기를 만들어보자
+class CurrencyConverter {
+	// 입력받는 스캐너 도입 ( 얼마를 넣었을 때 얼마로 환율 계산해줌)
+	// (환율이 1달러 = 1000원이라고 가정)
+	// 달러를 입력했을 때, *1000을 하여 원화로 계산
+	// 원화를 입력했을 때, /1000을 하여 달러로 계산
+	private static double rate;
+	// 원화를 달러로 변환
+	public static double toDollar(double won)
+	{
+		return won/rate; 
+	}
+	
+	// 달러를 원화로 변환
+	public static double toKWR (double dollar)
+	{
+		return dollar*rate; 
+	}
+	
+	// 환율 설정. 원/$1
+	public static void setRate(double r)
+	{
+		rate = r;
+	}
+	
+}
+
+public class StaticMember
+{
+	public static void main(String[] args)
+	{
+		System.out.println("환율 계산기");
+		Scanner scanner = new Scanner (System.in);
+		System.out.print("환율을 입력해주세요 (1달러당) >> ");
+		double money = scanner.nextDouble();
+		CurrencyConverter.setRate(money);
+		System.out.println("백만원은 $ " + CurrencyConverter.toDollar(1000000) + " 달러 입니다");
+		System.out.println("$100은 " + CurrencyConverter.toKWR(100) + " 원 입니다");
+		scanner.close();
+	}
+	
+}
