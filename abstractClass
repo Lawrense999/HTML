@@ -1,0 +1,48 @@
+package org.comstudy21.day13.util;
+
+// ﻿Q. 다음 추상 클래스 Calculator를 상속받은 GoodCalc 클래스를 구현하라!﻿
+// 추상 클래스인 Calculator는 add(), subtract(), average() 메소드를 추상 메소드로 선언하였을 뿐 어떻게 구현할지는 지시하지 않
+// 어떤 인자가 전달되고 어떤 타입의 값이 리턴되는지만 지정할 뿐
+// 구현은 서브 클래스의 몫
+
+abstract class Calculator
+{
+	public abstract int add(int a, int b);
+
+	public abstract int subtract(int a, int b);
+
+	public abstract double average(int[] a);
+}
+
+public class GoodCalc extends Calculator
+{
+	public int add(int a, int b)
+	{
+		return a + b;
+	}
+
+	public int subtract(int a, int b)
+	{
+		return a - b;
+	}
+
+	public double average(int[] a)
+	{
+		double sum = 0;
+		for (int i = 0; i < a.length; i++)
+
+//			sum = sum+a[i];
+			sum += a[i];
+		return sum / a.length;
+	}
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		GoodCalc gc = new GoodCalc();
+		System.out.println(gc.add(5,5));
+		System.out.println(gc.subtract(10, 5));
+		System.out.println(gc.average(new int[] {5,6,7,8,9}));
+	}
+
+}
